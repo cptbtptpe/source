@@ -1297,6 +1297,73 @@ app.directive('kkMenu', ['service', function (service) {
 }]);
 
 /**
+<<<<<<< Updated upstream
+=======
+ * Directive menu-lm
+ */
+app.directive('kkMenuLm', ['service', function (service) {
+
+    var command = {
+        scope: {},
+        restrict: 'A'
+    };
+    var door = false;
+
+    command.link = function (scope, elem, attr) {
+
+        var body = $('.all-lm'),
+            menu = $('.menu-lm'),
+            header = $('header');
+            width = window.screen.width;
+
+        var left = width / 1.8;
+
+        // 打开菜单
+        var openMenu = function () {
+            
+            door = true;
+            body.css({
+                width: width
+            }).animate({
+                marginLeft: -left,
+                opacity: 1
+            });
+            header.animate({right: left});
+            menu.animate({
+                right: 0,
+                opacity: 1
+            });
+        };
+
+        // 关闭菜单
+        var closeMenu = function () {
+
+            door = false;
+            body.animate({
+                marginLeft: 0,
+                opacity: 1
+            }).removeAttr('width');
+            header.animate({right: 0});
+            menu.animate({
+                right: -205,
+                opacity: 0
+            });
+        };
+
+        service.tap(elem[0], function () {
+            door ? closeMenu() : openMenu();
+        });
+
+        service.tap($('.menuclose')[0], function() {
+            closeMenu();
+        });
+    };
+
+    return command;
+}]);
+
+/**
+>>>>>>> Stashed changes
  * Directive fixed box
  */
 app.directive('kkFixed', ['service', function (service) {

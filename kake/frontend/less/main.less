@@ -20,11 +20,29 @@
   font-size: @size;
 }
 
+<<<<<<< Updated upstream
+=======
+html,body {
+  height: 100%;
+}
+.noscroll,.noscroll body {
+    overflow-x: hidden;
+}
+.noscroll body {
+    position: relative;
+}
+
+>>>>>>> Stashed changes
 body {
   font-family: optima, PingFangSC-Regular, sans-serif, "Noto SansCJK";
   max-width: 768px;
   margin: auto;
   color: #000000;
+<<<<<<< Updated upstream
+=======
+  background: url("@{img}/menubj.jpeg") no-repeat center center fixed;
+  background-size: cover;
+>>>>>>> Stashed changes
   position: relative;
 
   -webkit-overflow-scrolling: touch;
@@ -81,11 +99,30 @@ header {
   }
 }
 
+<<<<<<< Updated upstream
 #menu {
   display: none;
   position: fixed;
   z-index: 998;
   width: 126px;
+=======
+// 菜单出现
+.all-lm {
+  background-color: white;
+  height: 100%;
+  .body {
+    background-color: #fff;
+  }
+}
+
+.menu-lm {
+  opacity: 0;
+  position: fixed;
+  top: 20px;
+  right: -205px;
+  z-index: 999;
+  width: 170px;
+>>>>>>> Stashed changes
   padding: 0 10px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
@@ -100,8 +137,21 @@ header {
     border-bottom: 10px solid rgba(0, 0, 0, 0.7);
   }
   div {
+<<<<<<< Updated upstream
     hr {
       margin: 0;
+=======
+    p {
+      text-indent: 8px;
+      color: rgb(169, 142, 103);
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      .font-size(30px);
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      margin-bottom: 0;
+>>>>>>> Stashed changes
     }
     a {
       width: 100%;
