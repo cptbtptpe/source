@@ -110,7 +110,11 @@ html,body {
         }
     }
 }
-
+.all-lm{
+    .body {
+        background-color: #2c3e50;
+    }
+}
 .body {
     width: 100%;
     .product-one {
@@ -118,16 +122,17 @@ html,body {
         .line {
             width: 6.92rem;
             height: 0.75rem;
-            border-bottom: 0.01rem solid #ccc;
+            border-bottom: 0.01rem solid #ffd000;
             margin: 0 auto;
         }
         .title {
+            color: #ffd000;
             width: 1.65rem;
             height: 0.37rem;
             font-size: 15px;
             margin: -0.2rem auto;
             text-align: center;
-            background-color: white;
+            background-color: #2c3e50;
         }
         .product-detail {
             width: 6.92rem;
@@ -136,7 +141,7 @@ html,body {
             ul {
                 width: 100%;
                 a {
-                    color: black;
+                    color: #fff;
                 }
                 li {
                     width: 3.29rem;
@@ -147,19 +152,18 @@ html,body {
                             width:100%;
                         }
                         .price {
-                            width: 1.28rem;
-                            position: absolute;
-                            top: 1.25rem;
-                            left: 0;
-                            background-color: black;
-                            opacity: 0.7;
-                            color: white;
+                            display: block;
+                            height: 17px;
                             text-align: center;
-                            .s {
-                                font-size: 13px;
-                            }
-                            .b {
-                                font-size: 18px;
+                            line-height: 17px;
+                            color: #fafafa;
+                            background-color: rgba(34, 34, 34, 0.8);
+                            position: absolute;
+                            padding: 0 14px 0 10px;
+                            margin-top: -33px;
+                            i {
+                                font-size: 12px;
+                                margin-right: 1px;
                             }
                         }
                         p {
@@ -182,10 +186,10 @@ html,body {
         li {
             width: 100%;
             height: 7.1rem;
-            border-top: 0.01rem solid #ccc;
+            border-top: 0.01rem solid #ffd000;
             padding-top: 0.53rem;
             a {
-                color: black;
+                color: #fff;
             }
             .photo {
                 position: relative;
@@ -193,24 +197,31 @@ html,body {
                     width:100%;
                 }
                 .price {
-                    width: 2.07rem;
-                    position: absolute;
-                    top: 3.2rem;
-                    left: 0;
-                    background-color: black;
-                    opacity: 0.7;
-                    color: white;
+                    display: block;
+                    height: 27px;
                     text-align: center;
+<<<<<<< Updated upstream
                     .s {
                         font-size: 15px;
                     }
                     .b {
                         font-size: 27px;
+=======
+                    line-height: 30px;
+                    color: #fafafa;
+                    background-color: rgba(34, 34, 34, 0.8);
+                    position: absolute;
+                    padding: 0 14px 0 10px;
+                    font-size: 22px;
+                    margin-top: -45px;
+                    i {
+                        font-size: 14px;
+                        margin-right: 1px;
+>>>>>>> Stashed changes
                     }
                 }
                 h2 {
-                    font-size: 18px;
-                    padding-bottom: 10px;
+                    font-size: 19px;
                 }
                 small {
                     line-height: 10px;
@@ -352,3 +363,53 @@ html,body {
     opacity: 1;
   }
 }
+<<<<<<< Updated upstream
+=======
+
+// 光圈放大缩小
+.out-q {
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform-origin: center center;
+    animation: out 2s ease-in-out infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    margin-left: 3.3rem;
+    margin-top: 0.2rem;
+    .in-q {
+        position: absolute;
+        margin-left :15px;
+        top: 15px;
+        background-color: blue;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform-origin: center center;
+        animation: in 2s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes in {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+}
+
+@keyframes out {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+>>>>>>> Stashed changes
