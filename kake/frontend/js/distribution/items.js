@@ -28,6 +28,7 @@ app.controller('distribution', ['$scope', '$controller', function ($scope, $cont
     $scope.showBody = false;
 
     $scope.hidden = function () {
+
         var time = 500;
         $('.opening').fadeOut(time);
         $scope.timeout(function () {
